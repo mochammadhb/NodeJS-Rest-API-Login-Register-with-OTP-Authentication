@@ -1,0 +1,40 @@
+GET http://localhost:5000/api/v1/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmViNTAzNjlhYWQxZmE0NDdkOGMwNTQiLCJ1c2VybmFtZSI6Im1vY2hhbW1hZGhiIiwiZW1haWwiOiJoZGFuY293ekBnbWFpbC5jb20iLCJzYWxkbyI6MCwiaWF0IjoxNjU5NjYxNjUzLCJleHAiOjE2NTk2NjE2NzN9.QouDHWofG2ODSMcbmsyqf5ifdByWYiPiKYGkj0ypMA8
+
+###
+POST http://localhost:5000/api/v1/register
+Content-Type: application/json
+
+{
+    "username": "mochammadhb",
+    "email": "hdancowz@gmail.com",
+    "phone_number": "6289518794563",
+    "password": "123456",
+    "retypePassword": "123456"
+}
+
+###
+POST http://localhost:5000/api/v1/login
+Content-Type: application/json
+
+{
+    "username": "hdancowz@gmail.com",
+    "password": "123456"
+}
+
+###
+DELETE http://localhost:5000/api/v1/logout
+
+###
+GET http://localhost:5000/api/v1/refresh_token
+
+###
+GET http://localhost:5000/api/v1/otp-verification?phone_number=6289518794563
+ 
+###
+POST http://localhost:5000/api/v1/otp-verification?verify_phone_number=6289518794563
+Content-Type: application/json
+
+{
+    "otp": "7648"
+}
