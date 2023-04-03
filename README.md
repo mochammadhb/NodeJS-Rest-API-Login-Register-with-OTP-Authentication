@@ -20,4 +20,4 @@ first you have to install nodejs, to check if you have installed it type `node -
 
 ## 📝 Notes
 
-The server started simply returns a `Whatsapp BOT OpenAI` payload. The server code is located in `index.js`.
+The server started simply returns a `Server running` payload. The server code is located in `index.js`.
