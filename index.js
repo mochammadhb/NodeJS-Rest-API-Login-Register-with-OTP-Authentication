@@ -16,7 +16,7 @@ db.then(() => console.log("Database Connnection is successfully.")).catch(
 app.use(cors({credentials:true,origin:"http://localhost:3000"}));
 app.use(cookieParser());
 app.use(express.json());
-app.use("/api/v1/", Users);
+app.use("/auth/", Users);
 
 app.listen(port, () =>
   console.log(`Server up and running at Local Port ${port}`)
